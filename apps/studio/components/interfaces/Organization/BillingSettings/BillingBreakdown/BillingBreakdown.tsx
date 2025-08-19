@@ -69,10 +69,10 @@ const BillingBreakdown = () => {
           <p className="prose text-sm">
             {selectedOrganization?.managed_by === MANAGED_BY.AWS_MARKETPLACE ? (
               <>
-                You'll recieve two invoices from AWS Marketplace: one on{' '}
-                the 3rd of {billingCycleEnd.format('MMMM')} for your usage in{' '}
-                {billingCycleStart.format('MMMM')} and one on{' '}
-                {billingCycleEnd.format('MMMM DD')} for the fixed subscription fee.
+                You'll recieve two invoices from AWS Marketplace: one on the 3rd of{' '}
+                {billingCycleEnd.format('MMMM')} for your usage in{' '}
+                {billingCycleStart.format('MMMM')} and one on {billingCycleEnd.format('MMMM DD')}{' '}
+                for the fixed subscription fee.
               </>
             ) : (
               <>
